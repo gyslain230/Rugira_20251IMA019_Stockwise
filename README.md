@@ -10,8 +10,16 @@
 ---
 
 ## 1. Problem Statement
-Small and medium retail enterprises operating across multiple store branches frequently face critical supply chain inefficiencies, including recurring out-of-stock events for high-demand items, overstocking of slow-moving inventory, and human errors caused by manual inventory tracking[cite: 5, 7]. Lacking real-time transactional visibility into stock movements, inventory managers fail to reorder products from suppliers on time[cite: 5, 7]. This results in lost sales revenue, delayed customer order fulfillment, and tied-up working capital[cite: 5, 7].
+In developing economic contexts like Rwanda, the wholesale and retail trade sector accounts for 53.5% of all commercial establishments, yet suffers from extreme informality rates (between 87% and 91.9%) and heavy geographic concentration. Small and medium retail enterprises rely predominantly on manual record-keeping or static spreadsheets, leading to severe supply chain vulnerabilities. National business evaluations report that 50.9% of commercial enterprises experience operational capacity underutilization caused by unoptimized replenishment schedules and input supply bottlenecks. 
 
+Without real-time relational inventory tracking, retail businesses face systemic operational failures:
+* **Revenue Losses from Stockouts:** Out-of-stock events during peak demand windows cause immediate lost sales and customer dissatisfaction.
+* **Tied-Up Working Capital:** Overstocking slow-moving or obsolete items locks up vital operating capital.
+* **Human Error & Procurement Delays:** Manual tracking fails to evaluate supplier lead times ($L$) and demand variability ($\sigma_d$), resulting in delayed purchase requisitions.
+
+StockWise addresses these inefficiencies by embedding deterministic inventory control equations directly into a server-side Oracle Database architecture powered by PL/SQL.
+
+---
 ## 2. Objectives
 ### Main Objective
 To design, implement, and deploy a centralized relational Oracle Pluggable Database (PDB) powered by automated PL/SQL stored logic to optimize inventory replenishment and eliminate retail stockouts across store branches[cite: 5, 7, 8].
